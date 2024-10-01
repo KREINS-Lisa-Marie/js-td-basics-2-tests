@@ -14,6 +14,14 @@
 // 1. Affichez dans la console le résultat de toutes les combinaisons possibles de true ET false
 // 2. Avant de lancer votre navigateur et d'ouvrir la console, notez ici pour chaque ligne le résultat attendu dans un commentaire
 
+/*
+True && True    //True
+True && False   //false
+False && False  //false
+False && True*/     //false
+console.log(`${true && true } ${true && false} ${false && false} ${false && true}`);
+
+
 // Une condition qui utilise l'opérateur logique ET
 
 // 1. Demandez à l'utilisateur d'entrer un nombre et stockez-le dans une variable nombre
@@ -23,6 +31,13 @@
 
 // 1. Affichez dans la console le résultat de toutes les combinaisons possibles de true OU false
 // 2. Avant de lancer votre navigateur et d'ouvrir la console, notez ici pour chaque ligne le résultat attendu dans un commentaire
+/*
+True || True    //True
+True || False   //true
+False || False  //false
+False || True */ //true
+
+console.log(`${true || true } ${true || false} ${false || false} ${false || true}`);
 
 // Une condition qui utilise l'opérateur logique OU
 
