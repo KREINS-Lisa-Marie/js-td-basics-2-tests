@@ -10,3 +10,27 @@
 // Si l'heure actuelle était égale à 23, réinitialisez l'heure à 0 (minuit).
 //     Sinon, incrémentez l'heure actuelle.
 // Affichez la nouvelle heure, les minutes et les secondes dans la console.
+
+
+
+
+ let heure = 12;
+ let minutes = 23;
+ let secondes = 12;
+
+
+ secondes ++;
+
+ if (secondes === 59){
+     secondes = 0;
+ }
+ if (minutes ===59){
+     minutes = 0;
+ }
+
+ if (heure = 23){
+     heure = 0
+ } else{
+     heure ++;
+ }
+ console.log( heure + minutes + secondes);
