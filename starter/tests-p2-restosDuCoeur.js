@@ -26,3 +26,19 @@ Tester avec des montants d'achat de
 //       Assurez-vous que le montant versé aux restos du cœur ne dépasse pas 2€ (utilisez Math.min(2, montant versé)).
 //    b) Si la condition est fausse, la somme versée aux restos du cœur est de 0€.
 // 4. Affichez la somme versée aux restos du cœur dans la console.
+
+
+const n = 20;
+const x = 10;
+const nombreArticles = n;
+const prixUnitaire = x;
+
+
+montantTotalFatcutre = 10;
+
+if (montantTotalFatcutre> 25){
+    montantTotalFatcutre = montantTotalFatcutre - (0.1 * montantTotalFatcutre);
+} else {
+    montantTotalFatcutre;
+}
+console.log(montantTotalFatcutre);

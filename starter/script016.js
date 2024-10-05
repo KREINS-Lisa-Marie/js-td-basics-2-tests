@@ -10,18 +10,37 @@
 
  // const ageJohn = 14;
 const ageJohn = 24;
+ageJohn>=18 ? console.log("John boit des bières") : console.log("John boit des jus");
+
+
+/*
 if (ageJohn>18){
     console.log("John boit des bières");
 } else if (ageJohn <18){
     console.log("John boit des jus");
 }
-
+*/
 
 // MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou une autre valeur à une variable selon qu'une condition est remplie ou pas
 // 1. Affectez, selon qu'on est majeur ou pas, la valeur "bières" ou la valeur "jus" à la variable drink
 // 2. Afficher "John boit des …" (l'affichage s'adapte à l'âge de John, tester différents cas)
 
+
+
+
+const ageJohn2 = 24;
+drink = ageJohn2 >=18 ? "bières":"jus";
+console.log(`John boit des ${drink}`);
+
+
 // Faites la même chose en utilisant un if / else
+
+if (ageJohn2>=18){
+    console.log("John boit des bières");
+}else {
+    console.log("John boit des jus");
+}
+
 
 // 16 - 2. L'instruction Switch
 
@@ -34,6 +53,28 @@ if (ageJohn>18){
 //   - dans tous les autres cas, "John fait autre chose"
 // 3. Testez les différents cas de figure en changeant la profession de John
 
+
+// HELP comprend ≠ pq professeur ne va pas!!
+
+
+
+const job = "instituteur";
+switch (job){
+    case ( "instituteur"):
+    case ("professeur"):
+        console.log("John enseigne la programmation aux enfants");
+        break;
+    case ("chauffeur"):
+        console.log("John conduit un taxi à Lisbonne");
+        break;
+    case ("designer"):
+        console.log("John conçoit de beaux sites web");
+        break;
+    default:
+        console.log("John fait autre chose");
+}
+
+
 // 1. John a vielli : il a à présent 56 ans…
 // 2. Utilisez un switch pour affciher :
 //   - si l'âge est inférieur à 13, "John est un garçon",
@@ -42,6 +83,23 @@ if (ageJohn>18){
 //   - et sinon "John est un homme".
 // 3. Testez les différents cas de figure en changeant l'âge de John
 // 4. Testez avec un âge de 7 ans en enlevant la 2e instruction break pour voir ce que cela a comme impact
+
+
+const age = 56;
+switch (true){
+    case ( age<13):
+        console.log("John est un garçon");
+        break;
+    case (age>=13 && age<20):
+        console.log("John est un adolescent");
+        break;
+    case (age>=20 && age<= 30):
+        console.log("John est un jeune homme");
+        break;
+    default:
+        console.log("John est un homme");
+}
+
 
 // Autre application de l'instruction switch
 // 1. Demandez à l'utilisateur d'entrer l'information
