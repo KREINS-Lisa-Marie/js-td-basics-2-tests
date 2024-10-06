@@ -34,11 +34,11 @@ const nombreArticles = n;
 const prixUnitaire = x;
 
 
-montantTotalFatcutre = 10;
+montantTotalFacture = 10;
 
-if (montantTotalFatcutre> 25){
-    montantTotalFatcutre = montantTotalFatcutre - (0.1 * montantTotalFatcutre);
+if (montantTotalFacture> 25){
+    montantTotalFacture = montantTotalFacture - (0.1 * montantTotalFacture);
 } else {
-    montantTotalFatcutre;
+    montantTotalFacture;
 }
-console.log(montantTotalFatcutre);
+console.log(montantTotalFacture);
