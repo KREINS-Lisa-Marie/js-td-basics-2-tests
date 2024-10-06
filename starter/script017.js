@@ -10,18 +10,15 @@
 // 2. Affectez-lui la valeur 23
 // 3. Testez si la variable height est définie et affichez "La variable height est définie" ou "La variable height n'est PAS définie" selon le cas
 // 4. Testez différents cas de figure en changeant la valeur de height (par exemple 0, ou NaN) ou en ne lui affectant pas de valeur… ATTENTION, votre script doit bien dire que "La variable height est définie" dans le cas où on a donné à height une valeur de 0…
-/*
 
-const height = 23;
 
-if (height = undefined, null, 0, NaN){
+const height= 23;
+if (height || (height===0)){
     console.log("La variable height est définie");
-} else {
+}else {
     console.log("La variable height n'est PAS définie");
 }
 
-
- */
 
 // 1. Déclarez la variable height
 // 2. Affectez-lui la valeur 23
@@ -29,9 +26,11 @@ if (height = undefined, null, 0, NaN){
 // 4. Testez différents cas de figure en changeant la valeur de height ou en ne lui affectant pas de valeur…
 
 //const height= 23;
-
-
-
+if (height){
+    console.log("Cette variable contient bien une valeur non nulle");
+} else if (height === undefined || height === null){
+    console.log("Cette variable est nulle ou non définie");
+}
 
 
 // 17 - 2. Les opérateurs d'égalité
