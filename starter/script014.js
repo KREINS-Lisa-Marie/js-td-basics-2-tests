@@ -41,20 +41,15 @@ if (nombre>0){
 
 // Écrivez un programme qui dit "Bonjour" à l'utilisateur et n'accepte de lui répondre que si celui-ci lui dit "Bonjour" à son tour. Dans ce cas, le programme lui répond "Toi, tu es poli, tu me dis bonjour, je veux bien te parler… Comment t'appelles-tu ?". Il enregistre alors l'entrée dans une variable nom et, seulement si l'utilisateur a bien entré quelque chose dans le champ (il prend la peine de vérifier avant), il lui répond (dans la console), "Je t'aime bien, …".
 
-
-// HELP!!!!!
-
-
-/*
 const bonjour = prompt("Bonjour");
 
 if (bonjour==="Bonjour"){
-const poli = prompt("Toi, tu es poli, tu me dis bonjour, je veux bien te parler… Comment t'appelles-tu ?");
+    const nom = prompt("Toi, tu es poli, tu me dis bonjour, je veux bien te parler… Comment t'appelles-tu ?");
+    if (nom){
+        console.log("Je t'aime bien, …");
+    }
 }
-if (poli===true){
-    console.log("Je t'aime bien, …");
-}
-*/
+
 
 // 2. Exprimez une alternative : if / else
 
@@ -89,8 +84,8 @@ if (civilStatus === "married"){
 // 2. Servez-vous à présent de cette variable pour afficher "John est marié !" ou "John va, on l\'espère, bientôt se marier :)" selon qu'il est marié ou pas
 // 3. Retestez votre code après avoir changé la valeur de isMarried à false
 
-const isMarried = false;
-// const isMarried = true;
+const isMarried = true;
+// const isMarried = false;
 
 if (isMarried === true){
     console.log("John est marié !");
