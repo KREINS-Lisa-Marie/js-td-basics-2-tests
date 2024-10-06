@@ -21,6 +21,7 @@ alors que l'équipe de Mike a marqué 116, 94 et 123 points.
 BONNE CHANCE 😀
 */
 
+
 // sans bonus
 
 // 1. Calculez le score moyen de chaque équipe.
@@ -36,3 +37,35 @@ BONNE CHANCE 😀
 //    INDICE : vous allez avoir besoin de l'opérateur && pour prendre la décision.
 // 5. Changez là aussi les scores pour générer différents gagnants,
 //    en gardant toujours en tête qu'il pourrait y avoir des ex æquos.
+
+
+
+
+
+const scoreMoyenJohn = ((89 + 120 + 103)/3);
+const scoreMoyenMike = ((116 + 94 + 123)/3);
+const scoreMoyenMary = ((97 + 134 + 105)/3);
+
+if (scoreMoyenJohn > scoreMoyenMike && scoreMoyenJohn > scoreMoyenMary){
+    console.log(`L\'équipe de John a une meilleure moyenne. Moyenne: ${scoreMoyenJohn}`);
+} else if (scoreMoyenJohn === scoreMoyenMike && scoreMoyenJohn === scoreMoyenMary)
+    console.log(`Les équipes ont la même moyenne. Moyenne équipe Mike: ${scoreMoyenMike} Moyenne équipe John: ${scoreMoyenJohn} Moyenne équipe Mary: ${scoreMoyenMary}`);
+else if (scoreMoyenMike > scoreMoyenJohn && scoreMoyenMike > scoreMoyenMary){
+    console.log(`L\'équipe de Mike a une meilleure moyenne. Moyenne: ${scoreMoyenMike}`);
+} else {
+    console.log(`L\'équipe de Mary a une meilleure moyenne. Moyenne: ${scoreMoyenMary}`);
+}
+
+
+
+/* Code sans Mary
+
+
+if (scoreMoyenJohn>scoreMoyenMike){
+    console.log(`L\'équipe de John a une meilleure moyenne. Moyenne: ${scoreMoyenJohn}`);
+} else if (scoreMoyenJohn===scoreMoyenMike)
+    console.log(`Les équipes ont la même moyenne. Moyenne: ${scoreMoyenMike} Moyenne: ${scoreMoyenJohn}`);
+else {
+    console.log(`L\'équipe de Mike a une meilleure moyenne. Moyenne: ${scoreMoyenMike}`);
+}
+*/
