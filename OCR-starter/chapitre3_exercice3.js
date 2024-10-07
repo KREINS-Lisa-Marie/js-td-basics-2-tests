@@ -14,12 +14,12 @@
 
 
 
- let heure = 23;
+ let heure = 01;
  let minutes = 59;
  let secondes = 59;
 
 
-// secondes ++;
+ secondes ++;
 
  if (secondes >= 59){
      secondes = 0;
@@ -33,8 +33,28 @@
  }
 
  if (heure >= 23){
-     heure = 0
+     heure = 0;
  } else{
      heure ++;
  }
  console.log(`${heure} h ${minutes} min. ${secondes} sec.`);
+
+
+/*
+
+secondes ++;
+
+ if ( secondes >= 59){
+      secondes = 0;
+      if ( minutes >=59){
+            minutes = 0;
+            if (heure >= 23){
+                heure = 0;
+            }
+      }
+} else{
+  heure ++;
+}
+ console.log(`${heure} h ${minutes} min. ${secondes} sec.`);
+
+*/

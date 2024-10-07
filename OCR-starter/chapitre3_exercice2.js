@@ -22,4 +22,6 @@ if (moyenne < 10){
     console.log("Le candidat est reçu");
 } else if(moyenne >= 12){
     console.log("Le candidat est reçu avec mention");
+} else {
+    console.log("Erreur: La note doit être compris entre 0 et 20.");
 }

@@ -27,7 +27,7 @@ console.log(`${true && true } ${true && false} ${false && false} ${false && true
 // 1. Demandez à l'utilisateur d'entrer un nombre et stockez-le dans une variable nombre
 // 2. Testez si le nombre est dans l'intervalle [0, 100]. Autrement dit, testez si 0 <= nombre <= 100. Si c'est le cas, affichez "… est compris entre 0 et 100".
 
-let nombre = prompt("Entrez un nombre");
+let nombre = Number(prompt("Entrez un nombre"));
 //console.log(nombre); // Test si s'affiche
 if (0 <= nombre && nombre<= 100){
     console.log(`${nombre} est compris entre 0 et 100.`);
@@ -51,7 +51,7 @@ console.log(`${true || true } ${true || false} ${false || false} ${false || true
 // 2. Testez si le nombre est en dehors de l'intervalle [0, 100]. Si c'est le cas, affichez "… est en dehors de l'intervalle [0, 100]".
 
 
-nombre = prompt("Entrez un nombre");
+nombre = Number(prompt("Entrez un nombre"));
 //console.log(nombre); // Test si s'affiche
 if (nombre< 0 || nombre> 100){
     console.log(`${nombre} est en dehors de l'intervalle [0, 100].`);
@@ -69,7 +69,7 @@ console.log(!(false));
 // 1. Demandez à l'utilisateur d'entrer un nombre et stockez-le dans une variable nombre
 // 2. Si ce nombre n'est pas supérieur à 100, affichez "… est inférieur ou égal à 100".
 
-nombre = prompt("Entrez un nombre");
+nombre = Number(prompt("Entrez un nombre"));
 //console.log(nombre); // Test si s'affiche
 if (!(nombre > 100)){
     console.log(`${nombre} est inférieur ou égal à 100.`);
@@ -85,7 +85,7 @@ if (!(nombre > 100)){
 // 1°) s'il est négatif, affichez "… est négatif",
 // 2°) sinon, affichez "… est nul"
 
-nombre = prompt("Entrez un nombre");
+nombre = Number(prompt("Entrez un nombre"));
 if (nombre > 0) {
     console.log(`${nombre} est positif.`);
 } else {

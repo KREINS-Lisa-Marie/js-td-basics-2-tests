@@ -6,10 +6,15 @@
 // L'instruction ne s'exécutera que si une certaine condition est remplie (c.-à-d. vraie)
 
 // 1. Exprimez une condition : IF
-
+const a = 7;
+if (a>3){
+    console.log("Hello");
+}else{
+    console.log("Bye");
+}
 // 1. Écrivez un test dont la condition est true
 // 2. Dans le bloc, affichez "Je suis dans un bloc d'instructions soumis à une condition qui est toujours vraie, je vais donc toujours m'afficher"
- const a = 7;
+
  if (a>3){
      console.log("Je suis dans un bloc d'instructions soumis à une condition qui est toujours vraie, je vais donc toujours m'afficher");
  }else{
@@ -43,7 +48,7 @@ if (nombre>0){
 
 const bonjour = prompt("Bonjour");
 
-if (bonjour==="Bonjour"){
+if (bonjour==="Bonjour" || bonjour==="bonjour"){
     const nom = prompt("Toi, tu es poli, tu me dis bonjour, je veux bien te parler… Comment t'appelles-tu ?");
     if (nom){
         console.log("Je t'aime bien, …");

@@ -29,7 +29,7 @@ if (ageJohn>18){
 
 
 const ageJohn2 = 24;
-drink = ageJohn2 >=18 ? "bières":"jus";
+ageJohn2 >=18 ? drink ="bières": drink = "jus";
 console.log(`John boit des ${drink}`);
 
 
@@ -114,10 +114,60 @@ switch (true){
 //     — c.-à-d. qu'elle n'a entré aucun de ces qautre mots-là),
 //     affichez "Je n'ai pas compris !"
 
+
+const meteo = prompt("Quel temps fait-il dehors ? Répondez par un des quatre mots suivants :\n" +  "soleil, vent, pluie ou neige.");
+
+switch (true){
+    case (meteo === "soleil"):
+        console.log("Sortez en t-shirt.");
+        break;
+    case (meteo=== "vent"):
+        console.log("Sortez en pull.");
+        break;
+    case (meteo === "pluie"):
+        console.log("Sortez en blouson.");
+        break;
+    case (meteo === "neige"):
+        console.log("Restez au chaud à la maison.");
+        break;
+    default:
+        console.log("Je n'ai pas compris !");
+}
+
+
 // b) Switch sans break
 // L'instruction `break` fait sortir du bloc du switch. On ne souhaite pas toujours sortir, dans ce cas, on peut ne pas mettre de `break`
 // 1. Demandez à l'utilisateur d'entrer le numéro du jour de la semaine
 // 2. Affichez ensuite dans la console le message suivant : "Les jours suivants se sont déjà écoulés depuis le début de la semaine : …, …, …"
+
+const jours = Number(prompt("Entrez le numéro du jour de la semaine."));
+let ouput ="Les jours suivants se sont déjà écoulés depuis le début de la semaine : " ;
+switch (jours){
+    case 7 :
+        output += ", Samedi";
+    case 6 :
+        output += ", Vendredi";
+    case 5 :
+        output += ", Jeudi";
+    case 4 :
+        output += ", Mercredi";
+    case 3 :
+        output += ", Mardi";
+    case 2:
+        output += "Lundi";
+    case 1:
+        output += "Aucun jour ne s'est déjà écoulé.";
+        console.log(output);
+        break;
+    default:
+        output = "Je ne comprends pas la valeur."
+        console.log(output);
+}
+
+
+
+
+
 
 // Ici, toutes les instructions "console.log" entre la ligne case:… et l'instruction break seront exécutées, et on obtient donc une liste de jours. Notez bien qu'il faut quand même un break avant le default, sans quoi ce message d'erreur apparaîtra toujours à la fin de notre liste de jours… Notez qu'on aurait pu aussi écrire le default en premier, suivi d'un break puis la liste de tous les case.
 

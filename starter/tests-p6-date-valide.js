@@ -27,3 +27,44 @@ N'oubliez pas de tester votre programme avec diverses dates pour vous assurer qu
 
 Vous pouvez utiliser les exemples que vous avez fournis comme point de départ.
 */
+
+
+const date= day month year = prompt("Entrez une date en format: jour mois année (p. ex. 21 octobre 2019)");
+let day;
+let month;
+let year;
+maxDays= 31;
+
+month31= "janvier", "mars", "mai" , "juillet", "août", "octobre", "décembre"
+
+let annee4 = year%4 === 0 ;
+const annee400 = ((year%400) === 0);
+const annee100 = ((year%100) === 0);
+
+if (month === month31 ){
+    maxDays = 31;
+} else if (month === "février"){
+    if (estBissextile === true){
+        maxDays = 29;
+    } else {
+        maxDays = 28;
+    }
+} else {
+    maxDays = 30;
+}
+
+
+if (annee4 === true || annee400 === true){
+    console.log(`${year} est une année bissextile.`);
+    estBissextile = true;
+} else if (annee100 === true){
+    console.log(`${year} est une année non bissextile.`);
+    estBissextile = false;
+} else {
+    console.log(`${year} est une année non bissextile.`);
+    estBissextile = false;
+}
+
+
+console.log(`La date ${date} est valide`);
+console.log(`La date ${date} n'est PAS valide`);
