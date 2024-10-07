@@ -31,8 +31,8 @@ Valeurs de test :
 // 8. Affichez le montant de la réduction (discount) en euros dans la console.
 
 
-montantAchats = prompt("Entrez le montant des achats:");
-nombreEnfants = prompt("Entrez le nombre d'enfants dans la famille");
+montantAchats = Number(prompt("Entrez le montant des achats:"));
+nombreEnfants = Number(prompt("Entrez le nombre d'enfants dans la famille"));
 let discount = 0;
 
 if (montantAchats>50 || nombreEnfants >=3){

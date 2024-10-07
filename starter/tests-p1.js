@@ -13,13 +13,13 @@ sachant qu’on accorde 10% de ristourne si le client achète au moins 20 articl
 // 4. Affichez le montant total de la facture dans la console.
 
 
-const n = 20;
-const x = 10;
+const n = Number(prompt("Entrez le nombre d'articles achetés."));
+const x = Number(prompt("Entrez le prix unitaire."));
 const nombreArticles = n;
 const prixUnitaire = x;
 montantTotalFatcutre = (n * x);
 
-if (n>= 20){
+if (n >= 20){
     montantTotalFatcutre = montantTotalFatcutre - (0.1 * montantTotalFatcutre);
 } else {
     montantTotalFatcutre;

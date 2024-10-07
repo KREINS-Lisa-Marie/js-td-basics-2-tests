@@ -34,11 +34,25 @@ const nombreArticles = n;
 const prixUnitaire = x;
 
 
-montantTotalFacture = 10;
+ let montantTotalFacture = Number(prompt("Entrez le montant total des achats."));
+remise= (0.1 * montantTotalFacture);
+
 
 if (montantTotalFacture> 25){
     montantTotalFacture = montantTotalFacture - (0.1 * montantTotalFacture);
+
 } else {
     montantTotalFacture;
 }
+
+if (montantTotalFacture> 30){
+   montantVerse = (0.1 * remise);
+   if (montantVerse > 2){
+       montantVerse = 2;
+   }
+} else {
+    montantVerse= 0;
+}
+
+    console.log("Montant versé aux restos du coeur: " + montantVerse);
 console.log(montantTotalFacture);
