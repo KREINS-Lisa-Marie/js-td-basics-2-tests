@@ -22,7 +22,7 @@ AUTREMENT DIT :
 N'oubliez pas de tester votre programme avec différentes années pour vérifier qu'il fonctionne correctement.
 */
 
-const year = prompt(" Entrez une année.");
+const year = Number(prompt(" Entrez une année."));
 let estBissextile = undefined;
 
 let annee4 = year%4 === 0 ;

@@ -28,12 +28,81 @@ N'oubliez pas de tester votre programme avec diverses dates pour vous assurer qu
 Vous pouvez utiliser les exemples que vous avez fournis comme point de départ.
 */
 
-
+/*
 const date= day month year = prompt("Entrez une date en format: jour mois année (p. ex. 21 octobre 2019)");
 let day;
 let month;
 let year;
 maxDays= 31;
+*/
+
+let day = Number(prompt("Entrez un jour (en chiffres)."));
+let month= String(prompt("Entrez un mois (en lettres minuscules)."));
+let year= Number(prompt("Entrez une année (en chiffres)."));
+let maxDays= 31;
+
+let ismonthPossible= ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+const month31= ["janvier","mars","mai","juillet","août","octobre","décembre"];
+
+let annee4 = year%4 === 0 ;
+const annee400 = ((year%400) === 0);
+const annee100 = ((year%100) === 0);
+
+//if (ismonthPossible === "janvier" )
+
+if (annee4 === true || annee400 === true){
+    //console.log(`${year} est une année bissextile.`);
+    estBissextile = true;
+} else if (annee100 === true){
+    //console.log(`${year} est une année non bissextile.`);
+    estBissextile = false;
+} else {
+    //console.log(`${year} est une année non bissextile.`);
+    estBissextile = false;
+}
+
+if(day <= 31 && ismonthPossible === month && year > 0){
+    if (month === month31 ){
+        maxDays = 31;
+    } else if (month === "février"){
+        if (estBissextile === true){
+            maxDays = 29;
+        } else {
+            maxDays = 28;
+        }
+    } else {
+        maxDays = 30;
+    }
+    console.log(`La date ${day} ${month} ${year} est valide`);
+} else {
+    console.log(`La date ${day} ${month} ${year} n'est PAS valide`);
+}
+
+
+
+
+
+/*
+if (day ===true && month === true && year === true){
+    console.log(`La date ${day} ${month} ${year} est valide`);
+} else {
+    console.log(`La date ${day} ${month} ${year} n'est PAS valide`);
+}
+*/
+
+
+
+
+/*
+
+Copie pour moi
+
+
+let day = Number(prompt("Entrez un jour (en chiffres)."));
+let month= String(prompt("Entrez un mois (en lettres minuscules)."));
+let year= Number(prompt("Entrez une année (en chiffres)."));
+let maxDays= 31;
+
 
 month31= "janvier", "mars", "mai" , "juillet", "août", "octobre", "décembre"
 
@@ -66,5 +135,9 @@ if (annee4 === true || annee400 === true){
 }
 
 
-console.log(`La date ${date} est valide`);
-console.log(`La date ${date} n'est PAS valide`);
+if (day ===true && month31 === true && year === true){
+    console.log(`La date ${day} ${month} ${year} est valide`);
+} else {
+    console.log(`La date ${day} ${month} ${year} n'est PAS valide`);
+}
+ */
