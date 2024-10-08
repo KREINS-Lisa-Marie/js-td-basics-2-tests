@@ -38,7 +38,8 @@ BONNE CHANCE 😀
 // 5. Changez là aussi les scores pour générer différents gagnants,
 //    en gardant toujours en tête qu'il pourrait y avoir des ex æquos.
 
-
+// Mieux initialiser valeurs seules comme ça on peut les changer par après
+//  scoreJohn1 + scoreJohn2 + scoreJohn3
 
 
 

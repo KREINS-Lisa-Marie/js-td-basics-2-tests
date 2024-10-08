@@ -140,8 +140,8 @@ switch (true){
 // 1. Demandez à l'utilisateur d'entrer le numéro du jour de la semaine
 // 2. Affichez ensuite dans la console le message suivant : "Les jours suivants se sont déjà écoulés depuis le début de la semaine : …, …, …"
 
-const jours = Number(prompt("Entrez le numéro du jour de la semaine."));
-let ouput ="Les jours suivants se sont déjà écoulés depuis le début de la semaine : " ;
+const jours = parseInt(prompt("Entrez le numéro du jour de la semaine."));
+let output ="Les jours suivants se sont déjà écoulés depuis le début de la semaine : " ;
 switch (jours){
     case 7 :
         output += ", Samedi";
