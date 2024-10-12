@@ -139,7 +139,7 @@ switch (true){
 // L'instruction `break` fait sortir du bloc du switch. On ne souhaite pas toujours sortir, dans ce cas, on peut ne pas mettre de `break`
 // 1. Demandez à l'utilisateur d'entrer le numéro du jour de la semaine
 // 2. Affichez ensuite dans la console le message suivant : "Les jours suivants se sont déjà écoulés depuis le début de la semaine : …, …, …"
-
+/*
 const jours = parseInt(prompt("Entrez le numéro du jour de la semaine."));
 let output ="Les jours suivants se sont déjà écoulés depuis le début de la semaine : " ;
 switch (jours){
@@ -164,7 +164,70 @@ switch (jours){
         console.log(output);
 }
 
+*/
 
+
+
+
+
+
+
+const jours = parseInt(prompt("Entrez le numéro du jour de la semaine."));
+let output ="Les jours suivants se sont déjà écoulés depuis le début de la semaine : " ;
+switch (jours){
+    case 7 :
+        output += " Samedi,";
+    case 6 :
+        output += " Vendredi,";
+    case 5 :
+        output += " Jeudi,";
+    case 4 :
+        output += " Mercredi,";
+    case 3 :
+        output += " Mardi,";
+    case 2:
+        output += " Lundi";
+        console.log(output);
+        break;
+    case 1:
+        output += "Aucun jour ne s'est déjà écoulé.";
+        console.log(output);
+        break;
+    default:
+        output = "Je ne comprends pas la valeur."
+        console.log(output);
+}
+
+
+
+
+
+
+
+/*          NICHT GUT
+const jours = parseInt(prompt("Entrez le numéro du jour de la semaine."));
+let output ="Les jours suivants se sont déjà écoulés depuis le début de la semaine : " ;
+switch (jours){
+    case 1:
+        console.log("Aucun jour ne s'est déjà écoulé.");
+    case 2:
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : Lundi");
+    case 3 :
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : Lundi, Mardi");
+    case 4 :
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : Lundi, Mardi, Mercredi");
+    case 5 :
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : Lundi, Mardi, Mercredi, Jeudi");
+    case 6 :
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : Lundi, Mardi, Mercredi, Jeudi, Vendredi");
+    case 7 :
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi");
+        break;
+    default:
+        console.log("Je ne comprends pas la valeur.");
+}
+
+*/
 
 
 
